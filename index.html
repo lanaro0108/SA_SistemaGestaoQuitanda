@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Quitanda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Gestão - Quitanda MVC</h1>
+
+    <section id="cadastro">
+        <h2>Cadastro de Produto</h2>
+        <input type="text" id="nome" placeholder="Nome do Produto">
+        <input type="text" id="categoria" placeholder="Categoria">
+        <input type="number" id="preco" placeholder="Preço (R$)">
+        <input type="number" id="quantidade" placeholder="Qtd">
+        <button onclick="window.controller.adicionar()">Cadastrar</button>
+        <div id="mensagem" class="mensagem"></div>
+    </section>
+
+    <section id="estoque">
+        <h2>Estoque Atual</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Preço</th>
+                    <th>Qtd</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="lista-estoque"></tbody>
+        </table>
+    </section>
+
+    <section id="historico">
+        <h2>Histórico de Movimentações</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Qtd</th>
+                    <th>Preço</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody id="lista-historico"></tbody>
+        </table>
+    </section>
+
+    <script type="module" src="JS/main.js"></script>
+</body>
+</html>
