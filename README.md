@@ -4,8 +4,11 @@ Documento baseado na ISO/IEEE 29148:2018
 ## Sistema de Controle de Quitanda (Quitanda MVC)
 
 **Padrão:** ISO/IEC/IEEE 29148:2018
+
 **Versão:** 1.0.0
+
 **Data:** 2026-04-14
+
 **Autor:** Pedro Lanaro
 
 ---
